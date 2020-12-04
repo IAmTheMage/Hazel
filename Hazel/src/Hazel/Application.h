@@ -10,5 +10,7 @@ namespace Hazel {
       virtual ~Application();
       void Run();
   };
+
+  Application* CreateApplication();
 }
 

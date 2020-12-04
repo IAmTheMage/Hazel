@@ -1,7 +1,11 @@
-#include "Sandbox.h"
+#include <Hazel.h>
 
-int main(int argc, char* argv[]) {
-  Sandbox* sandbox = new Sandbox();
-  sandbox->Run();
-  return 0;
+class Sandbox : public Hazel::Application {
+public:
+  Sandbox() {};
+  ~Sandbox() {};
+};
+
+Hazel::Application* Hazel::CreateApplication() {
+  return new Sandbox();
 }
